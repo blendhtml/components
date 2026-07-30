@@ -1,0 +1,20 @@
+{#- bhtml:begin -#}
+{#- BlendHtml compiler: vendor/bin/bhtml -#}
+{#- Compiler-managed. Changes will be overwritten. -#}
+{%- set __DIR__ = 'bhtml/unit/backToTop' -%}
+{#- bhtml:end -#}
+
+{% block container %}
+
+    <button
+            id="{{ self.id }}"
+            type="button"
+            aria-label="Back to top"
+            class="opacity-0 invisible fixed bottom-2 right-2 z-50 items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white shadow-lg transition-all duration-500 hover:bg-blue-700 hover:scale-110"
+    >
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    {{ asset('backToTop', 'v1') }}
+
+{% endblock %}

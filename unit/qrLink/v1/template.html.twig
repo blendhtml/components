@@ -1,0 +1,16 @@
+{#- bhtml:begin -#}
+{#- BlendHtml compiler: vendor/bin/bhtml -#}
+{#- Compiler-managed. Changes will be overwritten. -#}
+{%- set __DIR__ = 'bhtml/unit/qrLink' -%}
+{#- bhtml:end -#}
+
+{% block container %}
+    <a
+            id="{{ self.id }}"
+            href="{{ self.data.url }}"
+            aria-label="Open QR code for this page"
+            class="fixed bottom-2 left-2 z-50 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-lg transition-all duration-500 hover:bg-blue-300 hover:scale-110"
+    >
+        <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+    </a>
+{% endblock %}

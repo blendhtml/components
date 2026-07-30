@@ -1,0 +1,29 @@
+{#- bhtml:begin -#}
+{#- BlendHtml compiler: vendor/bin/bhtml -#}
+{#- Compiler-managed. Changes will be overwritten. -#}
+{%- set __DIR__ = 'bhtml/widget/localeSwitchButtons' -%}
+{#- bhtml:end -#}
+
+{% block container %}
+
+    {# @todo Support all #}
+    {% set labels = {
+        'et': 'Switch language to Estonian',
+        'en': 'Switch language to English',
+        'ru': 'Switch language to Russian'
+    } %}
+
+    {% for locale in _bhtml.locales %}
+
+        <a
+                href="/locale?locale={{ locale }}&redirect={{ _bhtml.uri|url_encode }}"
+                aria-label="{{ labels[locale] }}"
+                {% if _bhtml.locale == locale %}aria-current="page"{% endif %}
+                class="{{ self.style.all }} {{ _bhtml.locale == locale ? self.style.active : self.style.inactive }}"
+        >
+            {{ locale|upper }}
+        </a>
+
+    {% endfor %}
+
+{% endblock %}
