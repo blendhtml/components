@@ -1,0 +1,13 @@
+{% block container %}
+<aside
+        data-modal="{% block modalTitle %}top{% endblock %}"
+        data-modal-type="top"
+        class="fixed left-0 top-0 z-50 w-full -translate-y-full bg-white shadow-xl transition-transform duration-300"
+>
+    <div class="flex items-center justify-between p-4">
+        {% block modalHeader %}<div></div>{% endblock %}
+        <button data-close-modal>✕</button>
+    </div>
+    {% block modalContents %}{% endblock %}
+</aside>
+{% endblock %}
