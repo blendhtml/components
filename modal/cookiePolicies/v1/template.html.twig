@@ -1,0 +1,61 @@
+{% extends '@components/modal/left/v1/template.html.twig' %}
+
+{% block modalTitle %}cookie-policies{% endblock %}
+
+{% block modalHeader %}
+    <h2 class="{{ self.style.title is defined ? self.style.title : 'text-2xl font-bold' }}">
+        {{ self.data.policyLabel }}
+    </h2>
+{% endblock %}
+
+{% block modalContents %}
+    <div class="{{ self.style.contentContainer is defined ? self.style.contentContainer : 'min-h-0 flex-1 overflow-y-auto p-4' }}">
+        {% for section in self.data.sections %}
+            <h2 class="{{ self.style.sectionTitle is defined ? self.style.sectionTitle : 'my-4 text-xl font-bold' }}">
+                {{ section.title }}
+            </h2>
+
+            <p class="{{ self.style.sectionContent is defined ? self.style.sectionContent : 'text-sm leading-loose' }}">
+                {{ section.content }}
+            </p>
+        {% endfor %}
+
+        <div class="{{ self.style.actions is defined ? self.style.actions : 'mt-8 flex justify-end gap-4' }}">
+            <button
+                    type="button"
+                    data-cookie-consent="reject"
+                    onclick="window.__modalManager?.close('cookie-policies-consent');"
+                    class="{{ self.style.rejectButton is defined ? self.style.rejectButton : 'hidden text-sm text-blue-600 underline hover:text-blue-800' }}"
+            >
+                {{ self.data.rejectLabel }}
+            </button>
+
+            <button
+                    type="button"
+                    data-cookie-consent="accept"
+                    onclick="window.__modalManager?.close('cookie-policies-consent');"
+                    class="{{ self.style.acceptButton is defined ? self.style.acceptButton : 'hidden bg-blue-700 px-4 py-2 text-lg text-white hover:bg-blue-900' }}"
+            >
+                {{ self.data.acceptLabel }}
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.querySelector('[data-modal="cookie-policies"]');
+
+        if (modal) {
+            const accept = modal.querySelector('[data-cookie-consent="accept"]');
+            const reject = modal.querySelector('[data-cookie-consent="reject"]');
+
+            const update = (consent) => {
+                accept?.classList.toggle('hidden', consent);
+                reject?.classList.toggle('hidden', !consent);
+            };
+
+            update(window.visitMetrics?.isConsentGiven() === true);
+
+            window.visitMetrics?.onConsentChange(update);
+        }
+    </script>
+{% endblock %}

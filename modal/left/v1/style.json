@@ -1,0 +1,5 @@
+{
+  "container": "fixed left-0 top-0 z-50 flex h-full w-80 flex-col -translate-x-full bg-white shadow-xl transition-transform duration-300",
+  "header": "flex items-start justify-between p-4",
+  "closingButton": ""
+}

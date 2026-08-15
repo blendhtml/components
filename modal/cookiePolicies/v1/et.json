@@ -1,0 +1,76 @@
+{
+  "message": "Kasutame veebisaidi täiustamiseks valikulisi esimese osapoole küpsiseid enda hallatava analüütika jaoks.",
+  "policyLabel": "Privaatsus- ja küpsisepoliitika",
+  "rejectLabel": "Keeldu",
+  "acceptLabel": "Nõustu",
+  "sections": [
+    {
+      "title": "Vastutav töötleja",
+      "content": "Infotechnohelp OÜ (registrikood 14461472), Eesti, e-post: it-consulting@nikolajev.ee, on isikuandmete vastutav töötleja, kes määrab isikuandmete töötlemise eesmärgid ja vahendid kooskõlas isikuandmete kaitse üldmääruse (GDPR) ja muude kohaldatavate andmekaitseseadustega."
+    },
+    {
+      "title": "Majutusteenuse pakkuja ja serverilogid",
+      "content": "Veebisaiti majutatakse Zone Media OÜ (registrikood 10577829), Eesti, e-post: info@zone.ee pakutaval infrastruktuuril. Majutustaristu võib võrgu turvalisuse, hoolduse ja teenuse kättesaadavuse tagamiseks automaatselt koguda standardseid serveri juurdepääsulogisid, sealhulgas IP-aadresse. Neid serveriloge haldab majutusteenuse pakkuja sõltumatult käesolevas poliitikas kirjeldatud enda hallatava analüütika andmetest."
+    },
+    {
+      "title": "Milliseid andmeid kogume",
+      "content": "Kogume minimaalselt andmeid, mis on vajalikud veebisaidi toimimiseks, analüütikaks, nõusoleku haldamiseks ja päringutele vastamiseks. Analüütikanõusoleku andmisel hõlmab see pseudonümiseeritud suhtlusandmeid, nagu lehtede URL-id, ajatemplid, nupuvajutused, kerimise ulatus ja lehtedel veedetud aeg. Päringu või kontaktivormi saatmisel töötleme teie vabatahtlikult esitatud teavet. Nõusoleku haldamise käigus töödeldakse teie IP-aadressi välise geolokatsiooniteenuse abil ligikaudse geograafilise piirkonna määramiseks. Me ei kogu oma analüütikasüsteemi kaudu teadlikult eriliigilisi isikuandmeid."
+    },
+    {
+      "title": "Küpsised",
+      "content": "Kasutame esimese osapoole küpsist nimega blendhtml_cookies_accepted, et meeles pidada, kas olete valikuliste analüütikaküpsistega nõustunud või need tagasi lükanud. Selle väärtus salvestab teie valiku ja määratakse nõusolekuotsuse tegemisel. Kui valikulised analüütikaküpsised on lubatud, võidakse teie brauserisse salvestada ka pseudonümiseeritud külastaja identifikaator. Analüütikat ei aktiveerita enne nõusoleku andmist. Oma analüütikanõusolekut saate igal ajal muuta või tagasi võtta veebisaidi privaatsusseadete kaudu."
+    },
+    {
+      "title": "Külastaja identifitseerimine",
+      "content": "Kui valikulised analüütikaküpsised on lubatud, võidakse teie brauserisse salvestada juhuslikult genereeritud pseudonümiseeritud külastaja identifikaator. Seda identifikaatorit kasutatakse pseudonümiseeritud analüütikasündmuste seostamiseks sama külastajaga. See ei ole mõeldud teie otseseks tuvastamiseks ning seda ei ühendata tuvastamise eesmärgil teiste andmeallikatega."
+    },
+    {
+      "title": "Analüütika ja jälgimine",
+      "content": "Meie analüütikasüsteem asub meie enda infrastruktuuril ega kasuta kolmandate osapoolte analüütikaplatvorme. Analüütika aktiveeritakse ainult pärast selgesõnalise nõusoleku saamist. Süsteem salvestab pseudonümiseeritud suhtluse sündmusi, nagu nupuvajutused, kerimine, leheaktiivsus ja lehtedel veedetud aeg. Analüütikapäringud blokeeritakse, kui nõusolekut ei ole antud, ning nõusoleku tagasivõtmine peatab kohe edasise analüütilise jälgimise ja tühjendab järjekorras olevad analüütikasündmused. IP-aadresse analüütikasündmuste kirjete hulka ei lisata."
+    },
+    {
+      "title": "Nõusoleku kirjed",
+      "content": "Kui nõustute valikuliste analüütikaküpsistega või lükkate need tagasi, salvestatakse nõusolekuotsus nõusoleku järgimise logisse. Kirje võib sisaldada toimingut, viitajat, pseudonümiseeritud külastaja identifikaatorit selle olemasolul, nõusoleku haldamise käigus tuletatud ligikaudset geograafilist asukohta ning otsuse kuupäeva ja kellaaega. Külastaja identifikaatorit ei looda ainult tagasilükkamise registreerimiseks, kui seda varem ei eksisteerinud."
+    },
+    {
+      "title": "Vormide esitamine",
+      "content": "Kui saadate päringu või kontaktivormi, töödeldakse teie esitatud teavet, näiteks kontaktandmeid, sõnumi sisu ja valikulisi manuseid, üksnes teie päringule vastamiseks ja sellega seotud suhtluse korraldamiseks. Kohaldatav õiguslik alus võib olla GDPR-i artikli 6 lõike 1 punkt b lepingu täitmiseks või lepingu sõlmimisele eelnevate toimingute tegemiseks või artikli 6 lõike 1 punkt f, kui töötlemine põhineb õigustatud huvil."
+    },
+    {
+      "title": "IP-aadress ja piirkondlik nõuete täitmine",
+      "content": "Nõusoleku haldamise käigus töödeldakse päringuga seotud IP-aadressi ligikaudse geograafilise piirkonna määramiseks. Praeguses lahenduses kasutatakse välist geolokatsiooniteenust ip-api.com, millelt küsitakse riigi, piirkonna, linna ja ajavööndi andmeid. IP-aadressi ennast nõusolekulogisse ei kirjutata; saadud ligikaudne geograafiline teave võidakse nõusolekuotsusega koos nõuete täitmise tõendamiseks salvestada. See väline geolokatsioonitöötlus on meie enda analüütikasüsteemist eraldiseisev."
+    },
+    {
+      "title": "Õigustatud huvi hindamine",
+      "content": "Kui töötlemine põhineb GDPR-i artikli 6 lõike 1 punktil f, tugineb vastutav töötleja õigustatud huvi hindamisele, et teha kindlaks, et töötlemine on vajalik ja proportsionaalne ega kaalu üles andmesubjektide põhiõigusi ja -vabadusi."
+    },
+    {
+      "title": "Andmete säilitamine ja turvalisus",
+      "content": "Veebisaidi loodud analüütikaandmeid ja nõusolekukirjeid säilitatakse veebisaidi enda serveritaristus. Rakendame asjakohaseid tehnilisi ja korralduslikke meetmeid, sealhulgas juurdepääsukontrolli ja failipõhist kaitset, et kaitsta isikuandmeid volitamata juurdepääsu, muutmise, avalikustamise või kaotsimineku eest. Eraldi funktsioonide, näiteks nõusoleku haldamise ajal piirkonna määramise jaoks kasutatavad välisteenused töötlevad andmeid eraldi, nagu käesolevas poliitikas kirjeldatud."
+    },
+    {
+      "title": "Teie valikud",
+      "content": "Teil on võimalik valikuliste analüütikaküpsistega nõustuda või need tagasi lükata. Samuti saate varem antud analüütikanõusoleku igal ajal veebisaidi privaatsusseadete kaudu tagasi võtta. Valikulise analüütika tagasilükkamine või nõusoleku tagasivõtmine keelab analüütilise jälgimise, kuid veebisaidi põhifunktsioonid jäävad kasutatavaks."
+    },
+    {
+      "title": "Andmete säilitamise periood",
+      "content": "Isikuandmeid säilitatakse ainult nii kaua, kui see on vajalik töötlemise eesmärkidel ning kohaldatavate õiguslike ja muude nõuete täitmiseks. Analüütikasündmuste ja nõusoleku kirjete salvestamine toimub praeguses rakenduses analüütika logifailides. Konkreetsed säilitamis- ja kustutamisperioodid võivad sõltuda toimimisest, õiguslikest ja nõuetele vastavuse nõuetest."
+    },
+    {
+      "title": "Teie õigused ja kaebused",
+      "content": "GDPR-i kohaselt võivad teil olla õigus tutvuda oma isikuandmetega, nõuda nende parandamist, kustutamist ja töötlemise piiramist ning õigus andmete ülekantavusele ja teatud töötlemisele vastuväite esitamisele. Oma õigustega seotud taotlused saate esitada vastutava töötleja kontaktandmete kaudu."
+    },
+    {
+      "title": "Andmekaitserikkumised",
+      "content": "Isikuandmetega seotud rikkumise korral hindab vastutav töötleja andmesubjektidele tekkivat riski ning teavitab kohaldatava õiguse nõuete korral pädevat järelevalveasutust ja mõjutatud isikuid vastavalt GDPR-i artiklitele 33 ja 34."
+    },
+    {
+      "title": "Poliitika uuendused",
+      "content": "Käesolevat poliitikat võidakse aeg-ajalt ajakohastada, et kajastada õiguslikke, tehnilisi või tegevusalaseid muudatusi. Viimase uuendamise kuupäev on märgitud allpool. Olulistest muudatustest, mis mõjutavad isikuandmete töötlemist, teavitatakse asjakohasel viisil."
+    },
+    {
+      "title": "Viimati uuendatud",
+      "content": "12. aug 2026"
+    }
+  ]
+}

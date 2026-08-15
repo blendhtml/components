@@ -1,0 +1,10 @@
+{
+  "container": "fixed left-0 top-0 z-50 flex h-full w-80 flex-col -translate-x-full bg-white shadow-xl transition-transform duration-300 min-w-[400px]",
+  "title": "text-2xl font-bold",
+  "contentContainer": "min-h-0 flex-1 overflow-y-auto p-4",
+  "sectionTitle": "my-4 text-xl font-bold",
+  "sectionContent": "text-sm leading-loose",
+  "actions": "mt-8 flex justify-end gap-4",
+  "rejectButton": "hidden text-sm text-blue-600 underline hover:text-blue-800",
+  "acceptButton": "hidden bg-blue-700 px-4 py-2 text-lg text-white hover:bg-blue-900"
+}

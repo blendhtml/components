@@ -1,13 +1,15 @@
 {% block container %}
-<aside
-        data-modal="{% block modalTitle %}right{% endblock %}"
-        data-modal-type="right"
-        class="fixed right-0 top-0 z-50 h-full w-80 translate-x-full bg-white shadow-xl transition-transform duration-300"
->
-    <div class="flex items-center justify-between p-4">
-        {% block modalHeader %}<div></div>{% endblock %}
-        <button data-close-modal>✕</button>
-    </div>
-    {% block modalContents %}{% endblock %}
-</aside>
+    <aside
+            data-modal="{% block modalTitle %}right{% endblock %}"
+            data-modal-type="right"
+            {% block modalConfigs %}{% endblock %}
+            class="{{ self.style.container is defined ? self.style.container : 'fixed right-0 top-0 z-50 flex h-full w-80 flex-col translate-x-full bg-white shadow-xl transition-transform duration-300' }}"
+    >
+        <div class="{{ self.style.header is defined ? self.style.header : 'flex shrink-0 items-start justify-between p-4' }}">
+            {% block modalHeader %}<div></div>{% endblock %}
+            {% block closingButton %}<button data-close-modal class="{{ self.style.closingButton is defined ? self.style.closingButton : '' }}">✕</button>{% endblock %}
+        </div>
+
+        {% block modalContents %}{% endblock %}
+    </aside>
 {% endblock %}

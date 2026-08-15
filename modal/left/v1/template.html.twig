@@ -2,11 +2,12 @@
 <aside
         data-modal="{% block modalTitle %}left{% endblock %}"
         data-modal-type="left"
-        class="fixed left-0 top-0 z-50 h-full w-80 -translate-x-full bg-white shadow-xl transition-transform duration-300"
+        {% block modalConfigs %}{% endblock %}
+        class="{{ self.style.container is defined ? self.style.container : 'fixed left-0 top-0 z-50 flex h-full w-80 flex-col -translate-x-full bg-white shadow-xl transition-transform duration-300' }}"
 >
-    <div class="flex items-center justify-between p-4">
-        {% block modalHeader %}<div></div>{% endblock %}
-        <button data-close-modal>✕</button>
+    <div class="{{ self.style.header is defined ? self.style.header : 'flex items-start justify-between p-4' }}">
+        {% block modalHeader %}{% endblock %}
+        {% block closingButton %}<button data-close-modal class="{{ self.style.closingButton is defined ? self.style.closingButton : '' }}">✕</button>{% endblock %}
     </div>
     {% block modalContents %}{% endblock %}
 </aside>

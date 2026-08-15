@@ -1,0 +1,76 @@
+{
+  "message": "We use optional first-party cookies for self-hosted analytics to help improve our website.",
+  "policyLabel": "Privacy & Cookies Policy",
+  "rejectLabel": "Reject",
+  "acceptLabel": "Accept",
+  "sections": [
+    {
+      "title": "Data controller",
+      "content": "Infotechnohelp OÜ (registry code 14461472), Estonia, email: it-consulting@nikolajev.ee, is the data controller responsible for determining the purposes and means of processing personal data in accordance with the General Data Protection Regulation (GDPR) and other applicable data protection laws."
+    },
+    {
+      "title": "Hosting provider & Server logs",
+      "content": "The website is hosted on infrastructure provided by Zone Media OÜ (registry code 10577829), Estonia, email: info@zone.ee. The hosting infrastructure may automatically collect standard server access logs, including IP addresses, for network security, maintenance, and service availability. These server logs are managed by the hosting provider independently of the self-hosted analytics data described in this policy."
+    },
+    {
+      "title": "What data we collect",
+      "content": "We collect the minimum data necessary for the operation of the website, analytics, consent management, and responding to requests. When analytics consent is granted, this includes pseudonymized interaction data such as page URLs, timestamps, button clicks, scroll depth, and time spent on pages. When you submit a request or contact form, we process the information you voluntarily provide. During consent management, your IP address is processed by an external geolocation service to determine an approximate geographic region. We do not intentionally collect special categories of personal data through our analytics system."
+    },
+    {
+      "title": "Cookies",
+      "content": "We use a first-party consent cookie named blendhtml_cookies_accepted to remember whether you have accepted or rejected optional analytics cookies. The value records your choice and is set when you make a consent decision. If optional analytics cookies are accepted, a first-party pseudonymous visitor token may also be stored in your browser. Analytics tracking is not activated before consent is granted. You may change or withdraw your analytics consent at any time through the website's privacy settings."
+    },
+    {
+      "title": "Visitor identification",
+      "content": "When optional analytics cookies are accepted, a randomly generated pseudonymous visitor identifier may be stored in your browser. This identifier is used to associate pseudonymized analytics events with the same visitor. It is not intended to directly identify you and is not combined with other data sources for identification purposes."
+    },
+    {
+      "title": "Analytics & Tracking",
+      "content": "Our analytics system is self-hosted and does not use third-party analytics platforms. Analytics tracking is activated only after explicit consent has been granted. The system records pseudonymized interaction events such as clicks, scrolling, page activity, and time spent on pages. Analytics requests are blocked when consent has not been granted, and withdrawing consent immediately stops further analytics tracking and clears queued analytics events. IP addresses are not included in the analytics event records."
+    },
+    {
+      "title": "Consent records",
+      "content": "When you accept or reject optional analytics cookies, the consent decision is recorded in our consent compliance log. The record may contain the consent action, referrer, pseudonymous visitor token when available, the approximate geographic location derived during consent management, and the date and time of the decision. A visitor token is not created solely for a rejection when no visitor token previously exists."
+    },
+    {
+      "title": "Form submissions",
+      "content": "When you submit a request or contact form, the information you provide, such as contact details, message content, and optional attachments, is processed solely for the purpose of responding to your inquiry and handling related communication. The applicable legal basis may be Article 6(1)(b) GDPR for contractual or pre-contractual steps or Article 6(1)(f) GDPR where processing is based on legitimate interests."
+    },
+    {
+      "title": "IP address & Regional Compliance",
+      "content": "During consent management, the IP address associated with the request is processed to determine an approximate geographic region. The current implementation uses the external ip-api.com geolocation service and requests country, region, city, and timezone information. The IP address itself is not written to our consent log; the resulting approximate geographic information may be recorded with the consent decision for compliance purposes. This external geolocation processing is separate from our self-hosted analytics system."
+    },
+    {
+      "title": "Legitimate interest assessment",
+      "content": "Where processing is based on Article 6(1)(f) GDPR, the data controller relies on a legitimate interest assessment to determine that the processing is necessary, proportionate, and does not override the fundamental rights and freedoms of data subjects."
+    },
+    {
+      "title": "Data storage & Security",
+      "content": "Analytics data and consent compliance records generated by the website are stored on the website's own server infrastructure. We implement appropriate technical and organizational measures, including access controls and file-level protections, to protect personal data against unauthorized access, alteration, disclosure, or loss. External services used for specific functions, such as regional geolocation during consent management, process data separately as described in this policy."
+    },
+    {
+      "title": "Your choices",
+      "content": "You may accept or reject optional analytics cookies. You may also withdraw previously granted analytics consent at any time through the website's privacy settings. Rejecting or withdrawing optional analytics consent disables analytics tracking while essential website functionality remains available."
+    },
+    {
+      "title": "Data retention",
+      "content": "Personal data is retained only for as long as necessary for the purposes for which it is processed and for applicable legal or compliance requirements. Analytics event records and consent compliance records are stored by the current application in its analytics log files. Specific retention and deletion periods may depend on operational, legal, and compliance requirements."
+    },
+    {
+      "title": "Your rights & Complaints",
+      "content": "Under the GDPR, you may have the right to access, rectify, erase, and restrict processing of your personal data, as well as the right to data portability and to object to certain processing. Requests concerning your rights may be submitted using the contact details provided by the data controller."
+    },
+    {
+      "title": "Data breaches",
+      "content": "In the event of a personal data breach, the data controller will assess the risk to data subjects and, where required by applicable law, notify the competent supervisory authority and affected individuals in accordance with Articles 33 and 34 GDPR."
+    },
+    {
+      "title": "Policy updates",
+      "content": "This policy may be updated from time to time to reflect legal, technical, or operational changes. The date of the most recent update is indicated below. Material changes affecting the processing of personal data will be communicated through appropriate channels."
+    },
+    {
+      "title": "Last updated",
+      "content": "12 Aug 2026"
+    }
+  ]
+}

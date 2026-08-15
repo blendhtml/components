@@ -1,0 +1,45 @@
+{% extends '@components/modal/bottom/v1/template.html.twig' %}
+
+{% block modalTitle %}cookie-policies-consent{% endblock %}
+
+{% block modalConfigs %}
+    data-modal-close-overlay="false"
+{% endblock %}
+
+{% block closingButton %}{% endblock %}
+
+{% block modalContents %}
+    <div class="{{ self.style.contents is defined ? self.style.contents : 'flex items-center justify-between gap-6 p-4' }}">
+        <div class="{{ self.style.messageWrapper is defined ? self.style.messageWrapper : 'min-w-0' }}">
+            <p class="{{ self.style.message is defined ? self.style.message : 'text-sm text-gray-900' }}">
+                {{ self.data.message }}
+            </p>
+
+            <button
+                    type="button"
+                    data-open-modal="cookie-policies"
+                    class="{{ self.style.policyButton is defined ? self.style.policyButton : 'text-sm text-blue-600 underline hover:text-blue-800' }}"
+            >
+                {{ self.data.policyLabel }}
+            </button>
+        </div>
+
+        <div class="{{ self.style.actions is defined ? self.style.actions : 'flex shrink-0 items-center gap-6' }}">
+            <button
+                    type="button"
+                    data-cookie-consent="reject"
+                    class="{{ self.style.rejectButton is defined ? self.style.rejectButton : 'text-sm text-blue-600 underline hover:text-blue-800' }}"
+            >
+                {{ self.data.rejectLabel }}
+            </button>
+
+            <button
+                    type="button"
+                    data-cookie-consent="accept"
+                    class="{{ self.style.acceptButton is defined ? self.style.acceptButton : 'bg-blue-700 px-4 py-2 text-white hover:bg-blue-800' }}"
+            >
+                {{ self.data.acceptLabel }}
+            </button>
+        </div>
+    </div>
+{% endblock %}
