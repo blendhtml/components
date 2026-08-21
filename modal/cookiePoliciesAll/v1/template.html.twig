@@ -1,0 +1,5 @@
+{{ bhtml('modal/cookiePolicies/v1') }}
+
+{% if _COOKIE.blendhtml_cookies_accepted is not defined  %}
+    {{ bhtml('modal/cookiePoliciesConsent/v1') }}
+{% endif %}
