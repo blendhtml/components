@@ -1,0 +1,62 @@
+{% extends '@components/modal/center/v1/template.html.twig' %}
+
+{% block modalTitle %}session-status{% endblock %}
+
+{% block modalHeader %}
+    <h2 class="{{ self.style.welcomeAdmin }}">
+        {{ self.data.welcomeAdmin }}
+    </h2>
+{% endblock %}
+
+{% block modalContents %}
+
+    {% if _bhtml.auth.hasRole('admin') %}
+        <div class="m-4 flex flex-col">
+            <div>
+                <span class="{{ self.style.email }}">{{ _bhtml.auth.user.email }}</span>:
+                {{ _bhtml.auth.roles|join(', ') }}
+            </div>
+
+            <hr class="my-4"/>
+
+            <a href="/logout" class="{{ self.style.link }}">{{ self.data.logout }}</a>
+
+            <hr class="my-4"/>
+
+            {% if _COOKIE['blendhtml_notrack'] %}
+                <a href="?track={{ _bhtml.NOTRACK_TOKEN }}" class="{{ self.style.link }}">
+                    {{ self.data.enableTracking }}
+                </a>
+            {% else %}
+                <a href="?notrack={{ _bhtml.NOTRACK_TOKEN }}" class="{{ self.style.link }}">
+                    {{ self.data.disableTracking }}
+                </a>
+            {% endif %}
+
+            <hr class="my-4"/>
+
+            <a href="/blendhtml/visit-metrics-v1/database" target="_blank" class="{{ self.style.link }}">
+                {{ self.data.visitMetrics }}
+            </a>
+
+            <hr class="my-4"/>
+
+            <a href="/blendhtml/admin/manage-user-access" target="_blank" class="{{ self.style.link }}">
+                {{ self.data.userAccess }}
+            </a>
+
+            <hr class="my-4"/>
+
+            <a href="/blendhtml/content-editing/create-page" target="_blank" class="{{ self.style.link }}">
+                {{ self.data.createPage }}
+            </a>
+
+        </div>
+    {% else %}
+        <div class="{{ self.style.adminOnly }}">
+            {{ self.data.adminOnly }}
+        </div>
+    {% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{
+  "welcomeAdmin": "Welcome, admin!",
+  "logout": "Logout",
+  "enableTracking": "Enable tracking",
+  "disableTracking": "Disable tracking",
+  "visitMetrics": "Visit metrics",
+  "userAccess": "Manage user access",
+  "createPage": "Create page",
+  "adminOnly": "Only administrators are allowed to see this modal's contents!"
+}

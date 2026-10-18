@@ -1,0 +1,10 @@
+{
+  "welcomeAdmin": "Tere tulemast, admin!",
+  "logout": "Logi välja",
+  "enableTracking": "Luba jälgimine",
+  "disableTracking": "Keela jälgimine",
+  "visitMetrics": "Külastuste statistika",
+  "userAccess": "Kasutajate juurdepääsu haldamine",
+  "createPage": "Loo uus leht",
+  "adminOnly": "Selle modaali sisu on nähtav ainult administraatoritele!"
+}

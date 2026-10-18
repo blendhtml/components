@@ -1,0 +1,6 @@
+{
+  "welcomeAdmin": "text-2xl font-bold",
+  "email": "font-bold",
+  "link": "font-bold underline text-blue-400 hover:text-blue-300,",
+  "adminOnly": "m-4 font-bold text-red-500"
+}
